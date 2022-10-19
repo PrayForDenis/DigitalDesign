@@ -1,0 +1,6 @@
+D:\Games\C#\FrequencyDll\FrequencyDll\bin\Debug\FrequencyDll.dll
+D:\Games\C#\FrequencyDll\FrequencyDll\bin\Debug\FrequencyDll.pdb
+D:\Games\C#\FrequencyDll\FrequencyDll\obj\Debug\FrequencyDll.csproj.AssemblyReference.cache
+D:\Games\C#\FrequencyDll\FrequencyDll\obj\Debug\FrequencyDll.csproj.CoreCompileInputs.cache
+D:\Games\C#\FrequencyDll\FrequencyDll\obj\Debug\FrequencyDll.dll
+D:\Games\C#\FrequencyDll\FrequencyDll\obj\Debug\FrequencyDll.pdb

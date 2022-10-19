@@ -1,0 +1,10 @@
+D:\Games\C#\WebService\WebService\bin\WebService.dll.config
+D:\Games\C#\WebService\WebService\bin\WebService.dll
+D:\Games\C#\WebService\WebService\bin\WebService.pdb
+D:\Games\C#\WebService\WebService\obj\Debug\WebService.csproj.AssemblyReference.cache
+D:\Games\C#\WebService\WebService\obj\Debug\WebService.csproj.CoreCompileInputs.cache
+D:\Games\C#\WebService\WebService\obj\Debug\WebService.csproj.CopyComplete
+D:\Games\C#\WebService\WebService\obj\Debug\WebService.dll
+D:\Games\C#\WebService\WebService\obj\Debug\WebService.pdb
+D:\Games\C#\WebService\WebService\bin\FrequencyDll.dll
+D:\Games\C#\WebService\WebService\bin\FrequencyDll.pdb

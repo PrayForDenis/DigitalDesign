@@ -1,0 +1,8 @@
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\bin\Debug\WordFrequencyNET.exe.config
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\bin\Debug\WordFrequencyNET.exe
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\bin\Debug\WordFrequencyNET.pdb
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\obj\Debug\WordFrequencyNET.csproj.AssemblyReference.cache
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\obj\Debug\WordFrequencyNET.csproj.SuggestedBindingRedirects.cache
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\obj\Debug\WordFrequencyNET.csproj.CoreCompileInputs.cache
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\obj\Debug\WordFrequencyNET.exe
+D:\Games\C#\WordFrequencyNET\WordFrequencyNET\obj\Debug\WordFrequencyNET.pdb
