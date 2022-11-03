@@ -13,7 +13,7 @@ function asyncRequest() {
             alert(`Ошибка ${request.status}: ${request.statusText}`);
         } else {
             var stock = JSON.parse(request.responseText);
-            stockPrice.innerHTML = '<b>$ ' + stock.chart.result[0].meta.regularMarketPrice + '</b>';
+            stockPrice.innerHTML = '<h3>$ ' + stock.chart.result[0].meta.regularMarketPrice + '</h3>';
         }
     };
 }
