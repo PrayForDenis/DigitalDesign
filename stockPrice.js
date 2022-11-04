@@ -4,16 +4,15 @@ var stockPrice = document.querySelector("#response-info");
 var request = new XMLHttpRequest();
 
 function asyncRequest() {
-    request.open("GET", "https://query1.finance.yahoo.com/v8/finance/chart/BLUE?region=US&lang=en-US&include" +
-        "PrePost=false&interval=5m&useYfid=true&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance", true);
+    request.open("GET", "https://www.cbr-xml-daily.ru/daily_json.js", true);
     request.send();
 
     request.onload = function () {
         if (request.status != 200) {
-            alert(`Ошибка ${request.status}: ${request.statusText}`);
+            alert("Error ${request.status}: ${request.statusText}");
         } else {
             var stock = JSON.parse(request.responseText);
-            stockPrice.innerHTML = '<h3>$ ' + stock.chart.result[0].meta.regularMarketPrice + '</h3>';
+            stockPrice.innerHTML = "<h3>" + stock.Valute.USD.Value + " RUB</h3>";
         }
     };
 }
