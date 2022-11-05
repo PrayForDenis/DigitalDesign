@@ -46,23 +46,7 @@
                 <h2>Мини-опрос</h2>
                 <fieldset>
                     <legend>Есть ли у вас в портфеле акции компании BlueBird Bio inc. ?</legend>
-                    <form method="post" action="http://localhost/inp/radio">
-                        <p>
-                            <input type="radio" value="yes" name="stock" checked> Да
-                        </p>
-                        <p>
-                            <input type="radio" value="buyplan" name="stock"> Планирую купить
-                        </p>
-                        <p>
-                            <input type="radio" value="sellplan" name="stock"> Планирую продать
-                        </p>
-                        <p>
-                            <input type="radio" value="no" name="stock"> Нет
-                        </p>
-                        <p>
-                            <input type="submit" value="Ввести">
-                        </p>
-                    </form>
+                    <div id="root"></div>
                 </fieldset>
             </div>
         </div>
@@ -86,5 +70,77 @@
         </div>
     </div>
     <script src="stockPrice.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>		 
+    <script type="text/babel">
+        class ManagedRadioButtonComponent extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.state = {value: ''};
+
+                this.onRadioChange = this.onRadioChange.bind(this);
+                this.onSubmit = this.onSubmit.bind(this);
+            }
+
+            onRadioChange(event) {
+                this.setState({value: event.target.value});
+            }
+
+            onSubmit(event) {
+                alert('Выбранное значение: ' + this.state.value);
+                event.preventDefault();
+            }
+
+            render() {
+                return (
+                    <form onSubmit={this.onSubmit} >
+                        <p>
+                            <input
+                                type="radio"
+                                value="yes"
+                                name="stock"
+                                checked={this.state.value == "yes"}
+                                onChange={this.onRadioChange}
+                            /> Да
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                value="buyplan"
+                                name="stock"
+                                checked={this.state.value == "buyplan"}
+                                onChange={this.onRadioChange}
+                            /> Планирую купить
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                value="sellplan"
+                                name="stock"
+                                checked={this.state.value == "sellplan"}
+                                onChange={this.onRadioChange}
+                            /> Планирую продать
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                value="no"
+                                name="stock"
+                                checked={this.state.value == "no"}
+                                onChange={this.onRadioChange}
+                            /> Нет
+                        </p>
+                        <p>
+                            <input type="submit" value="Ввести" />
+                        </p>
+                    </form>
+                );
+            }
+        }
+
+        ReactDOM.render(<ManagedRadioButtonComponent />, document.getElementById("root"));
+    </script>
 </body>
 </html>
